@@ -10,7 +10,7 @@ const infos = [
     time: "12AM",
     emoji: <BoltIcon className="h-10 w-10 text-black font-bold" />,
     temperature: 85,
-    bg: "#ffffff",
+    bg: "bg-[#ffffff]",
     color: "black",
   },
   {
@@ -19,7 +19,7 @@ const infos = [
     time: "12AM",
     emoji: <BoltIcon className="h-10 w-10 text-black font-bold" />,
     temperature: 85,
-    bg: "#f5b717",
+    bg: "bg-[#f5b717]",
     color: "black",
   },
   {
@@ -28,7 +28,7 @@ const infos = [
     time: "12AM",
     emoji: <SunIcon className="h-10 w-10 text-black font-bold" />,
     temperature: 85,
-    bg: "#05c3ac",
+    bg: "bg-[#05c3ac]",
     color: "black",
   },
   {
@@ -37,7 +37,7 @@ const infos = [
     time: "12AM",
     emoji: <MoonIcon className="h-10 w-10 text-black font-bold" />,
     temperature: 20,
-    bg: "#e95c30",
+    bg: "bg-[#e95c30]",
     color: "white",
   },
 ];
@@ -50,7 +50,7 @@ export default function Weather() {
         return (
           <div
             key={info.name}
-            className={`border-2 border-b-4 border-black rounded-2xl w-full flex justify-between bg-[${info.bg}] my-5 py-2 text-${info.color}`}
+            className={`border-2 border-b-4 border-black rounded-2xl w-full flex justify-between ${info.bg} my-5 py-2 text-${info.color}`}
           >
             <div className="grid grid-row-2 gap- my-auto px-5">
               <h1 className="font-bold text-l">{info.name}</h1>

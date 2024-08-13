@@ -3,8 +3,6 @@ import BriefcaseIcon from "@heroicons/react/20/solid/BriefcaseIcon";
 import ChartBarIcon from "@heroicons/react/20/solid/ChartBarIcon";
 import ChevronLeftIcon from "@heroicons/react/24/outline/ChevronLeftIcon";
 import MagnifyingGlassIcon from "@heroicons/react/24/outline/MagnifyingGlassIcon";
-import PhotoIcon from "@heroicons/react/24/outline/PhotoIcon";
-import XMarkIcon from "@heroicons/react/24/outline/XMarkIcon";
 import BuildingOffice2Icon from "@heroicons/react/24/solid/BuildingOffice2Icon";
 import CircleStackIcon from "@heroicons/react/24/solid/CircleStackIcon";
 const boxs = [
@@ -13,7 +11,7 @@ const boxs = [
     profile: <ArrowPathRoundedSquareIcon className="h-6 w-6 text-black" />,
     name: "Bill Rizer",
     detail: "Planet Designer",
-    bg: "#e95c30",
+    bg: "bg-[#e95c30]",
     invited: 0,
   },
   {
@@ -21,7 +19,7 @@ const boxs = [
     profile: <ChartBarIcon className="h-6 w-6 text-black" />,
     name: "Genbei Yagy",
     detail: "Planet Designer",
-    bg: "#05c3ac",
+    bg: "bg-[#05c3ac]",
     invited: 0,
   },
   {
@@ -29,7 +27,7 @@ const boxs = [
     profile: <BuildingOffice2Icon className="h-6 w-6 text-black" />,
     name: "Lancy Neo",
     detail: "Rogue Corp",
-    bg: "#e95c30",
+    bg: "bg-[#e95c30]",
     invited: 1,
   },
   {
@@ -37,7 +35,7 @@ const boxs = [
     profile: <BriefcaseIcon className="h-6 w-6  text-black" />,
     name: "Bill Rizer",
     detail: "Hard Corp",
-    bg: "#f5b717",
+    bg: "bg-[#f5b717]",
     invited: 0,
   },
   {
@@ -45,7 +43,7 @@ const boxs = [
     profile: <CircleStackIcon className="h-6 w-6 text-black" />,
     name: "Konami",
     detail: "Xenon Creator",
-    bg: "#fa8eb8",
+    bg: "bg-[#fa8eb8]",
     invited: 0,
   },
 ];
@@ -75,7 +73,7 @@ export default function Friends() {
             >
               <div className="flex">
                 <div
-                  className={`rounded-full p-2 border border-black bg-[${box.bg}]`}
+                  className={`rounded-full p-2 border border-black ${box.bg}`}
                 >
                   {box.profile}
                 </div>

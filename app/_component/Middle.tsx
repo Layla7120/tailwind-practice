@@ -3,19 +3,19 @@ import XMarkIcon from "@heroicons/react/24/outline/XMarkIcon";
 const boxs = [
   {
     id: 1,
-    bg: "#f5b717",
+    bg: "bg-[#f5b717]",
   },
   {
     id: 2,
-    bg: "#05c3ac",
+    bg: "bg-[#05c3ac]",
   },
   {
     id: 3,
-    bg: "#fa8eb8",
+    bg: "bg-[#fa8eb8]",
   },
   {
     id: 4,
-    bg: "#e95c30",
+    bg: "bg-[#e95c30]",
   },
 ];
 export default function Middle() {
@@ -37,7 +37,7 @@ export default function Middle() {
           return (
             <div
               key={box.id}
-              className={`border border-black aspect-[8/9] bg-[${box.bg}] rounded-xl`}
+              className={`border border-black aspect-[8/9] ${box.bg} rounded-xl`}
             >
               <PhotoIcon className="w-10 m-auto h-full text-white" />
             </div>
@@ -45,7 +45,7 @@ export default function Middle() {
         })}
       </div>
       <div className="bg-blue-700 text-white font-bold text-center p-2 rounded-lg mt-10 mb-3">
-        Let' get it done
+        Let&apos; get it done
       </div>
     </div>
   );
